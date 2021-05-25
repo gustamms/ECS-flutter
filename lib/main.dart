@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:esc/views/loginScreen.dart';
-//import 'package:firebase_core/firebase_core.dart';
-
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 void main() async {
+
+  //Firebase Init
   WidgetsFlutterBinding.ensureInitialized();
-  //await Firebase.initializeApp();
+
+  Firestore.instance
+      .collection("usuarios")
+      .document("pontuacao")
+      .setData({"Gustavo" : "Teste"});
+
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Sistema de ponto',
-      debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
-      //initialRoute: '/',
-      //routes: {'/':(context) => LoginScreen()},
-    );
+    return Container();
   }
 }
