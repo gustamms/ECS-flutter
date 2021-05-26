@@ -1,22 +1,16 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+
+import 'Login.dart';
 
 void main() async {
 
   //Firebase Init
-  WidgetsFlutterBinding.ensureInitialized();
+  // WidgetsFlutterBinding.ensureInitialized();
 
-  Firestore.instance
-      .collection("usuarios")
-      .document("pontuacao")
-      .setData({"Gustavo" : "Teste"});
-
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
+  runApp(MaterialApp(
+    home: Login(),
+    debugShowCheckedModeBanner: false,
+  ));
 }
