@@ -1,16 +1,27 @@
-# esc
+# Employee Clocking Systems
 
-A new Flutter project.
+Projeto em Flutter, com Firebase e Firebase auth para aprendizado.
 
-## Getting Started
+Após instalar o aplicativo, verá a página de login.
 
-This project is a starting point for a Flutter application.
+![Login](images/Login.jpeg)
 
-A few resources to get you started if this is your first Flutter project:
+Caso não tenha login, deve-se cadastrar.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![Register](images/Registro.jpeg)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Ao completar o cadastro, irá criar o usuário no Firebase.
+
+![AuthFirebase](images/AuthFirebase.png)
+
+Após se cadastrar, irá direto para o aplicativo.
+
+![MarcarPonto](images/MarcarPonto.jpeg)
+
+Ao marcar ponto, irá criar um registro no Cloud Firestore.
+
+![FireStore](images/FireStore.png)
+
+Ao se logar tem o Push Notification
+
+![PushNotification](images/PushNotification.jpeg)
